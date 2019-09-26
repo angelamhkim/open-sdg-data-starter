@@ -35,6 +35,11 @@ prose:
             element: hidden
             label: "Indicator number"
             scope: global
+        - name: "indicator_sort_order"
+        field:
+            element: text
+            label: "Indicator display order (within Goal page)"
+            scope: data
       - name: "target"
         field:
             element: text
@@ -190,11 +195,7 @@ prose:
             help: If this box is checked then the prescence of a GeoCode field will trigger a map
             value: false
             scope: data
-      - name: "indicator_sort_order"
-        field:
-            element: text
-            label: "Indicator display order (within Goal page)"
-            scope: data
+ 
       ######### Chart Info #########
       - name: "graph_type"
         field:
