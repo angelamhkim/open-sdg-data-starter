@@ -1,7 +1,11 @@
-Year,Group,Value
-2015,A,1
-2015,B,3
-2015,,2
-2016,A,1
-2016,B,3
-2016,,2
+Year,Units,Value
+2012,Total Number of Deaths,23
+2012,"Deaths per 100,000 Live Births",17.5
+2013,Total Number of Deaths,23
+2013,"Deaths per 100,000 Live Births",17.9
+2014,Total Number of Deaths,22
+2014,"Deaths per 100,000 Live Births",16.9
+2015,Total Number of Deaths,17
+2015,"Deaths per 100,000 Live Births",13.7
+2016,Total Number of Deaths,22
+2016,"Deaths per 100,000 Live Births",17.9
