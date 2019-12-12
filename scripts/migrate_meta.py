@@ -70,8 +70,8 @@ def update_metadata(indicator):
             data_non_statistical = True
         elif post['graph'] == 'bar':
             graph_type = 'bar'
-        elif post['graph'] == 'binary':
-            graph_type = 'binary'
+        elif post['graph'] == 'stacked-bar':
+            graph_type = 'stacked-bar'
         post.metadata['data_non_statistical'] = data_non_statistical
         post.metadata['graph_type'] = graph_type
         # Clean up the unused variable.
