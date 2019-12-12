@@ -42,15 +42,6 @@ def update_metadata(indicator):
     with open(indicator, 'r') as f:
         post = frontmatter.load(f)
 
-        # Figure out the reporting_status.
-        if 'reporting_status' not in post.metadata:
-            reporting_status = 'notstarted'
-            if 'source_url' in post.metadata and post['source_url'] != None and post['source_url'] != '':
-                reporting_status = 'inprogress'
-                if 'graph' in post.metadata and post['graph'] != None and post['graph'] != '':
-                    reporting_status = 'complete'
-            post.metadata['reporting_status'] = reporting_status
-
         # Make sure it has a published key.
         if 'published' not in post.metadata:
             post.metadata['published'] = False
