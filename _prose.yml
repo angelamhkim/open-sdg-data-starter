@@ -208,8 +208,8 @@ prose:
                 value: 'line'
               - name: 'Bar'
                 value: 'bar'
-              - name: 'Stacked Bar'
-                value: 'stacked-bar'
+              - name: 'Binary'
+                value: 'binary'
             scope: graph
       - name: "graph_title"
         field:
