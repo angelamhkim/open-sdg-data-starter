@@ -13,7 +13,10 @@ import frontmatter
 FOLDER_META = 'meta'
 
 def update_metadata(indicator):
-    
+
+    with open(indicator, 'r') as f:
+        post = frontmatter.load(f)
+
         # Figure out the graph_type and data_non_statistical.
         data_non_statistical = False
         graph_type = 'line'
@@ -22,13 +25,18 @@ def update_metadata(indicator):
             data_non_statistical = True
         elif post['graph'] == 'bar':
             graph_type = 'bar'
-        elif post['graph'] == 'stacked-bar':
-            graph_type = 'stacked-bar'
+        elif post['graph'] == 'binary':
+            graph_type = 'binary'
         post.metadata['data_non_statistical'] = data_non_statistical
         post.metadata['graph_type'] = graph_type
         # Clean up the unused variable.
         if 'graph' in post.metadata:
             del post.metadata['graph']
+
+    with open(indicator, 'w') as f:
+        f.write(frontmatter.dumps(post))
+
+    return post
 
 def main():
     """Update all all of the indicators in the metadata folder."""
