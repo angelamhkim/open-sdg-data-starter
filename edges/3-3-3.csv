@@ -1,2 +1,12 @@
 From,To
+Unit measure,Sex
+Unit measure,Age
 Country,Region
+Unit measure,Country
+Unit measure,Malaria species
+Unit measure,Fatality
+Unit measure,Country of birth
+Unit measure,Ethnicity
+Unit measure,Region of travel
+Observation status,Unit multiplier
+Unit multiplier,Unit measure
